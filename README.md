@@ -1,4 +1,5 @@
 # STOCK-PRICE-PREDICTION
+#ACCURACY OVER REAL TIME AMAZON DATA ABOUT 92 percent.
 This project aims to predict Amazon’s stock closing prices using a Long Short-Term Memory (LSTM) network trained on a multivariate time series dataset. The dataset integrates traditional market indicators such as SMA, EMA, and RSI to better capture market momentum, trends, and potential reversal zones like golden/death crosses or overbought/oversold regions. The pipeline includes:
 Data cleaning and feature engineering.
 Normalization using MinMaxScaler.
