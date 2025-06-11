@@ -66,7 +66,7 @@ Predicted vs Actual Prices (scatter)
 Last 200 days prediction vs real values (line plot)
 
 
-# GELU WAS USED INSTEAD OF RELU DUE TO FASTER CONVERGENCE 
+# GELU WAS USED INSTEAD OF RELU activation function
 Why GELU Performs Better for Time Series / Stock Data
 Feature	                         ReLU	                              GELU
 Smoothness	                    Harsh                             (discontinuous)	Smooth transition
