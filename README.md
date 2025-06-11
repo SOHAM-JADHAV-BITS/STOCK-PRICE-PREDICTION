@@ -46,6 +46,9 @@ Identifies momentum exhaustion — whether a stock is overbought (likely reversa
 
 #LSTM is ideal for time-dependent sequential data like stock prices:
 It retains long-term dependencies through gated memory cells.Handles vanishing gradient better than traditional RNNs.Suitable for modeling lagged financial indicators like RSI and EMA crossovers.
+Hyperparameter fine tuning is done as per accuracy shoot ups and as per the model response , adding a dropout of 0.5 ensures that the model doesnt learn the data to an overextent and is always ready to encounter new concepts at new points 
+
+sliding window technique here also rolls over the entire processed data - how ? -> 0-99 index as input to predict the closing price of 100 th index which is already available for validation , similarly 1-100 again for data and predicting 101st day closing price and so on for  about 7000 enteries for the 25 years.
 
 80% training, 20% testing Shuffle disabled to maintain chronological order (crucial for time series) Window size: 100 → last 100 days of indicators used to predict next closing price.
 
